@@ -1,3 +1,4 @@
+#SUBSCRIBED https://gist.githubusercontent.com/iblueer/f888656cbf16dfaacdef2b9c5540af38/raw/9d774d1df479a5c50d812538036bad92eaff795d/%E6%97%A5%E6%B8%AF%E5%8F%B0%E5%8A%A0%E7%BE%8E%E5%BE%B7-stash.yaml
 name: 日港台加美德
 desc: 自用覆写规则（日/港/台/加/美/德）
 
@@ -375,6 +376,8 @@ rules:
   - RULE-SET,apple-cn,Apple
   - RULE-SET,microsoft@cn,国内网站
   - RULE-SET,microsoft,Microsoft
+  - RULE-SET,gfw,其他外网
+  - RULE-SET,cn,国内网站
   - GEOIP,LAN,直连,no-resolve
   - GEOIP,CN,国内网站,no-resolve
   - MATCH,其他外网
@@ -475,6 +478,19 @@ rule-providers:
     behavior: domain
     format: text
     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.list
+  gfw:
+    type: http
+    interval: 86400
+    behavior: classical
+    format: text
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+  cn:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: text
+    url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.list
+
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
