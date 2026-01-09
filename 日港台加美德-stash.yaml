@@ -130,88 +130,8 @@ proxy-groups: #!replace
       - 全部节点
       - 自动选择
       - 直连
-  - name: 哔哩东南亚
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/bilibili_3.png
-    type: select
-    proxies:
-      - 默认节点
-      - HK 香港
-      - TW 台湾省
-      - JP 日本
-      - CA 加拿大
-      - US 美国
-      - DE 德国
-      #      - TK 土耳其
-      - 其它地区
-      - 全部节点
-      - 自动选择
-      - 直连
-  - name: 巴哈姆特
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Bahamut.png
-    type: select
-    proxies:
-      - 默认节点
-      - HK 香港
-      - TW 台湾省
-      - JP 日本
-      - CA 加拿大
-      - US 美国
-      - DE 德国
-      #      - TK 土耳其
-      - 其它地区
-      - 全部节点
-      - 自动选择
-      - 直连
   - name: YouTube
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
-    type: select
-    proxies:
-      - 默认节点
-      - HK 香港
-      - TW 台湾省
-      - JP 日本
-      - CA 加拿大
-      - US 美国
-      - DE 德国
-      #      - TK 土耳其
-      - 其它地区
-      - 全部节点
-      - 自动选择
-      - 直连
-  - name: NETFLIX
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
-    type: select
-    proxies:
-      - 默认节点
-      - HK 香港
-      - TW 台湾省
-      - JP 日本
-      - CA 加拿大
-      - US 美国
-      - DE 德国
-      #      - TK 土耳其
-      - 其它地区
-      - 全部节点
-      - 自动选择
-      - 直连
-  - name: Spotify
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
-    type: select
-    proxies:
-      - 默认节点
-      - HK 香港
-      - TW 台湾省
-      - JP 日本
-      - CA 加拿大
-      - US 美国
-      - DE 德国
-      #      - TK 土耳其
-      - 其它地区
-      - 全部节点
-      - 自动选择
-      - 直连
-  - name: Disney+
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney+.png
     type: select
     proxies:
       - 默认节点
@@ -437,8 +357,8 @@ rules:
   - GEOSITE,apple,Apple
   - GEOIP,telegram,Telegram
   - GEOSITE,telegram,Telegram
-  - GEOIP,netflix,NETFLIX
-  - GEOSITE,netflix,NETFLIX
+  - GEOIP,netflix,默认节点
+  - GEOSITE,netflix,默认节点
   - GEOSITE,category-media,其他外网
   - GEOSITE,category-media-cn,国内网站
   - GEOIP,ad,REJECT
@@ -849,12 +769,12 @@ rules:
   - SCRIPT,quic,REJECT
   - RULE-SET,category-ai-chat-!cn,OpenAI
   - RULE-SET,telegram,Telegram
-  - RULE-SET,biliintl,哔哩东南亚
-  - RULE-SET,bahamut,巴哈姆特
+  - RULE-SET,biliintl,默认节点
+  - RULE-SET,bahamut,默认节点
   - RULE-SET,youtube,YouTube
-  - RULE-SET,netflix,NETFLIX
-  - RULE-SET,spotify,Spotify
-  - RULE-SET,disney,Disney+
+  - RULE-SET,netflix,默认节点
+  - RULE-SET,spotify,默认节点
+  - RULE-SET,disney,默认节点
   - RULE-SET,tiktok,TikTok
   - RULE-SET,steam@cn,国内网站
   - RULE-SET,steam,Steam
