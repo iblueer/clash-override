@@ -241,7 +241,7 @@ proxy-groups: #!replace
     interval: 120
     tolerance: 50
     lazy: true
-    filter: "(?i)(加|🇨🇦|ca|canada)"
+    filter: "(?i)(加拿大|🇨🇦|ca|canada)"
   - name: US 美国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
     type: url-test
@@ -273,7 +273,7 @@ proxy-groups: #!replace
     interval: 120
     tolerance: 50
     lazy: true
-    filter: "(?i)(新加坡|🇸🇬|sg|singapore)"
+    filter: "(?i)(新加坡|新|🇸🇬|sg|singapore)"
   - name: FR 法国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/France.png
     type: url-test
