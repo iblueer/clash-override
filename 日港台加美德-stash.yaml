@@ -2,20 +2,42 @@
 name: 日港台加美德
 desc: 自用覆写规则（日/港/台/加/美/德）
 icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
-
+# 使用 Sub-Store 管理订阅（需要在 Sub-Store 中添加对应名称的单条订阅）
+# 在 Sub-Store 中创建：Provider-CNIX、Provider-主角、Provider-GLaDOS-A、Provider-GLaDOS-B
 proxy-providers:
-  Provider-1:
-    interval: 600
-    url: http://sub.store/download/Provider-1?target=Stash
-  Provider-2:
-    interval: 600
-    url: http://sub.store/download/Provider-2?target=Stash
-  Provider-3:
-    interval: 600
-    url: http://sub.store/download/Provider-3?target=Stash
-  Provider-4:
-    interval: 600
-    url: http://sub.store/download/Provider-4?target=Stash
+  Provider-CNIX:
+    type: http
+    interval: 3600
+    url: http://sub.store/download/CNIX?target=Stash
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Provider-主角:
+    type: http
+    interval: 3600
+    url: http://sub.store/download/zhujue?target=Stash
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Provider-GLaDOS-A:
+    type: http
+    interval: 3600
+    url: http://sub.store/download/GlaDOS-iblueer?target=Stash
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Provider-GLaDOS-B:
+    type: http
+    interval: 3600
+    url: http://sub.store/download/GlaDOS-maemolee?target=Stash
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
 mode: rule
 dns:
   default-nameserver:
