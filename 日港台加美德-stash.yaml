@@ -418,6 +418,7 @@ rules:
   - DST-PORT,9000,直连
   - DST-PORT,9999,直连
   - GEOIP,cn,直连
+  - GEOIP,private,直连,no-resolve
   - GEOSITE,cn,直连
   - PROCESS-NAME,DownloadService,直连
   - PROCESS-NAME,Folx,直连
@@ -845,12 +846,6 @@ rules:
   - DOMAIN-SUFFIX,xmr.2miners.com,REJECT
   - DOMAIN-SUFFIX,xmr.cool,REJECT
   - DOMAIN-SUFFIX,zymerget.win,REJECT
-  - GEOSITE,microsoft,Microsoft
-  - GEOIP,ad,REJECT
-  - GEOSITE,category-ads-all,REJECT
-  - GEOSITE,microsoft,Microsoft
-  - GEOIP,ad,REJECT
-  - GEOSITE,category-ads-all,REJECT
   - SCRIPT,quic,REJECT
   - RULE-SET,category-ai-chat-!cn,OpenAI
   - RULE-SET,telegram,Telegram
