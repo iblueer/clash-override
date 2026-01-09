@@ -5,34 +5,11 @@ icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
 # 使用 Sub-Store 管理订阅（需要在 Sub-Store 中添加对应名称的单条订阅）
 # 在 Sub-Store 中创建：CNIX、zhujue、GlaDOS-iblueer、GlaDOS-maemolee
 proxy-providers: #!merge
-  Provider-CNIX:
+  全部节点:
     type: http
+    url: "http://sub.store/download/collection/maemosub?target=Stash"
     interval: 3600
-    url: http://sub.store/download/CNIX?target=Stash
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Provider-主角:
-    type: http
-    interval: 3600
-    url: http://sub.store/download/zhujue?target=Stash
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Provider-GLaDOS-A:
-    type: http
-    interval: 3600
-    url: http://sub.store/download/GlaDOS-iblueer?target=Stash
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Provider-GLaDOS-B:
-    type: http
-    interval: 3600
-    url: http://sub.store/download/GlaDOS-maemolee?target=Stash
+    path: ./全部节点.yaml
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
