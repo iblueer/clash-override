@@ -3,8 +3,8 @@ name: 日港台加美德
 desc: 自用覆写规则（日/港/台/加/美/德）
 icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
 # 使用 Sub-Store 管理订阅（需要在 Sub-Store 中添加对应名称的单条订阅）
-# 在 Sub-Store 中创建：Provider-CNIX、Provider-主角、Provider-GLaDOS-A、Provider-GLaDOS-B
-proxy-providers:
+# 在 Sub-Store 中创建：CNIX、zhujue、GlaDOS-iblueer、GlaDOS-maemolee
+proxy-providers: #!merge
   Provider-CNIX:
     type: http
     interval: 3600
