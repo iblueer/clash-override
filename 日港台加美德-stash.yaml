@@ -35,7 +35,6 @@ proxy-groups: #!replace
     type: select
     proxies:
       - 自动选择
-      - 手动选择
       - 直连
       - HK 香港
       - TW 台湾省
@@ -394,10 +393,6 @@ proxy-groups: #!replace
     lazy: true
   - name: 全部节点
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
-    type: select
-    include-all: true
-  - name: 手动选择
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Space_Station.png
     type: select
     include-all: true
 rules:
