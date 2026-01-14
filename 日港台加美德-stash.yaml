@@ -326,6 +326,16 @@ rules:
   - DOMAIN-KEYWORD,xunlei,直连
   - DOMAIN-KEYWORD,yunpan,直连
   - DOMAIN-KEYWORD,xget,直连
+  - IP-CIDR,1.1.1.3/8,直连,no-resolve
+  - DOMAIN-KEYWORD,anyrouter.top,默认节点
+  - DOMAIN,pmpjfbhq.cn-nb1.rainapp.top,默认节点
+  - DOMAIN,a-ocnfniawgw.cn-shanghai.fcapp.run,默认节点
+  - DOMAIN-SUFFIX,canva.com,默认节点
+  - DOMAIN,lunz.cn,直连
+  - DOMAIN,maemo.cc,直连
+  - DOMAIN-SUFFIX,adobe.com,REJECT
+  - DOMAIN-SUFFIX,qq.com,直连
+  - DOMAIN-SUFFIX,canva.cn,直连
   - DST-PORT,10300,直连
   - DST-PORT,10343,直连
   - DST-PORT,18080,直连
