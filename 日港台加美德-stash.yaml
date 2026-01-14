@@ -325,6 +325,7 @@ rules:
   - DOMAIN-KEYWORD,xmr,直连
   - DOMAIN-KEYWORD,xunlei,直连
   - DOMAIN-KEYWORD,yunpan,直连
+  - DOMAIN-KEYWORD,xget,直连
   - DST-PORT,10300,直连
   - DST-PORT,10343,直连
   - DST-PORT,18080,直连
