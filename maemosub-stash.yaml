@@ -1,5 +1,5 @@
 #SUBSCRIBED https://raw.githubusercontent.com/iblueer/clash-override/refs/heads/main/maemosub-stash.yaml
-name: 日港台加美德
+name: maemosub-stash.yaml
 desc: 自用覆写规则（日/港/台/加/美/德）
 icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
 # 使用 Sub-Store 管理订阅（需要在 Sub-Store 中添加对应名称的单条订阅）
