@@ -1,3 +1,6 @@
+name: maemosub-stash-override-merge
+desc: 自用覆写规则（日/港/台/加/美/德/法/英/新/泰）
+icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
 proxy-groups: #!merge
   - name: "🔰 手动选择"
     type: select
@@ -118,4 +121,6 @@ proxy-groups: #!merge
 
 rules:
   - DOMAIN,localhost,直连
-
+  - DOMAIN,github.com,自动选择
+  - DOMAIN,api.github.com,自动选择
+  - DOMAIN,*.githubusercontent.com,自动选择
