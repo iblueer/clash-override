@@ -119,11 +119,12 @@ proxy-groups: #!merge
     type: select
     include-all: true
 
-  # 注入到主配置的分组中，确保存活
+  # 直接替换主配置的分组，避免 duplicate name 错误
   - name: "🐟 漏网之鱼"
     type: select
-    proxies: #!merge
+    proxies:
       - "🔰 自选分组"
+      - DIRECT
 
 rules:
   - DOMAIN,localhost,直连
