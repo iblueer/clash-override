@@ -119,12 +119,13 @@ proxy-groups: #!merge
     type: select
     include-all: true
 
-  # 直接替换主配置的分组，避免 duplicate name 错误
-  - name: "🐟 漏网之鱼"
-    type: select
-    proxies:
-      - "🔰 自选分组"
-      - DIRECT
+  # 暂时注释掉，避免 duplicate name 错误。
+  # Stash YAML 覆写不支持修改已存在的组。
+  # - name: "🐟 漏网之鱼"
+  #   type: select
+  #   proxies:
+  #     - "🔰 自选分组"
+  #     - DIRECT
 
 rules:
   - DOMAIN,localhost,直连
