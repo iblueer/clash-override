@@ -2,7 +2,7 @@ name: maemosub-stash-override-merge
 desc: 自用覆写规则（日/港/台/加/美/德/法/英/新/泰）
 icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
 proxy-groups: #!merge
-  - name: "🔰 手动选择"
+  - name: "🔰 自选分组"
     type: select
     proxies:
       - 自动选择
@@ -118,6 +118,11 @@ proxy-groups: #!merge
   - name: 全部节点
     type: select
     include-all: true
+
+  # 注入到主配置的分组中，确保存活
+  - name: "🐟 漏网之鱼"
+    proxies: #!merge
+      - "🔰 自选分组"
 
 rules:
   - DOMAIN,localhost,直连
