@@ -6,7 +6,7 @@ proxy-groups: #!merge
     type: select
     proxies:
       - 自动选择
-      - 直连
+      - DIRECT
       - HK 香港
       - TW 台湾省
       - JP 日本
@@ -128,7 +128,7 @@ proxy-groups: #!merge
   #     - DIRECT
 
 rules:
-  - DOMAIN,localhost,直连
+  - DOMAIN,localhost,DIRECT
   - DOMAIN,github.com,自动选择
   - DOMAIN,api.github.com,自动选择
   - DOMAIN,*.githubusercontent.com,自动选择
