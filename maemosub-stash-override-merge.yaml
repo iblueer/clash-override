@@ -121,6 +121,7 @@ proxy-groups: #!merge
 
   # 注入到主配置的分组中，确保存活
   - name: "🐟 漏网之鱼"
+    type: select
     proxies: #!merge
       - "🔰 自选分组"
 
